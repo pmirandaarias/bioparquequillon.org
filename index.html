@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bioparque Quillón</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Bioparque Quillón, animales, conservación, vida silvestre, Chile, parque natural, turismo en Quillón, actividades familiares, educación ambiental" name="keywords">
+    <meta content="Visita el Bioparque Quillón, un parque dedicado a la conservación de la vida silvestre en Chile. Disfruta de una experiencia única con animales y actividades educativas para toda la familia." name="description">
+    <meta property="og:title" content="Bioparque Quillón">
+    <meta property="og:description" content="Visita el Bioparque Quillón, un parque dedicado a la conservación de la vida silvestre en Chile. Disfruta de una experiencia única con animales y actividades educativas para toda la familia.">
+    <meta property="og:image" content="https://www.bioparquequillon.org/img/logo-cafe-ig.jpg">
+    <meta property="og:image:secure_url" content="https://www.bioparquequillon.org/img/logo-cafe-ig.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="813">
+    <meta property="og:image:height" content="821">
+    <meta property="og:url" content="https://www.bioparquequillon.org">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style2.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 ps-5 text-start padding-nav-left">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Camino a Cerro Negro Km 7.2, Quillón - Región de Ñuble - Chile</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Sábados y Domingo: <strong>11:00 - 17:00</strong></small>
+                </div>
+            </div>
+            <div class="col-lg-5 pe-5 text-end padding-nav-right">
+                <div class="h-100 d-inline-flex align-items-center" style="margin-right: 30px">
+                    <div class="custom-select">
+                        <div class="select-selected" style="display: initial">
+                            <img src="img/spain.png" alt="Bandera de España" class="flag-icon">
+                            Español
+                        </div>
+                        <div class="select-items select-hide">
+                            <div data-value="en">
+                                <img src="img/uk-flag.png" alt="Bandera del Reino Unido" class="flag-icon">
+                                English
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+569 9047 8860 | +569 8208 8789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a target="_blank" class="btn bg-light me-0" style="color: #1877F2" href="https://www.facebook.com/bioparqueeducativoquillon.org">
+                        <img src="img/logo-png-facebook-icon-transparent-png_18930476.png" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a target="_blank" class="btn bg-light me-0" style="color: #1877F2" href="https://www.instagram.com/bioparque_quillon">
+                        <img src="img/instagram.png" alt="Facebook" width="42" height="42">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Alerta Flotante Giras Pedagógicas -->
+    <div id="floatingAlertGiras" class="floating-alert-giras">
+        <div class="alert mb-0" role="alert">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="flex-grow-1">
+                    <h6 class="alert-heading">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Giras Pedagógicas Disponibles
+                    </h6>
+                    <p class="mb-2">
+                        <strong>Reserva tu visita:</strong> animales, naturaleza y aprendizaje
+                    </p>
+                    <div class="small">
+                        <strong>📅 Martes a Viernes</strong><br>
+                        <strong>📧</strong>
+                        <a href="mailto:delegacionesbioparque@gmail.com" class="email-link">
+                            delegacionesbioparque@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <button type="button" class="btn-close ms-3" onclick="closeFloatingAlertGiras()"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/LOGO%20LETRAS%20CAFE.png" alt="Icon">
+            <h1 class="m-0 bp-title">BIOPARQUE QUILLÓN</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="#inicio" class="nav-item nav-link active">Inicio</a>
+                <a href="presentacion.html" class="nav-item nav-link">Presentación</a>
+                <a href="#horarios-y-valores" class="nav-item nav-link">Horarios y Valores</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="mision-y-objetivos.html" class="dropdown-item">Misión y Objetivos</a>
+                        <a href="galeria.html" class="dropdown-item">Galería</a>
+                        <a href="colegios-e-instituciones.html" class="dropdown-item">Colegios e Instituciones</a>
+                    </div>
+                </div>
+                <a href="#contacto" class="nav-item nav-link">Contacto</a>
+                <div class="nav-item dropdown language-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Idioma</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="index.html" class="dropdown-item"><img src="img/spain.png" alt="Bandera de España" class="flag-icon">Español</a>
+                        <a href="index-en.html" class="dropdown-item"><img src="img/uk-flag.png" alt="Bandera del Reino Unido" class="flag-icon">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div id="inicio" class="container-fluid bg-dark p-0 mb-5">
+        <div class="row g-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
+                <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+                    <h1 class="display-4 text-secondary mb-5">Disfruta un día maravilloso en familia</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-duration="0.1s" data-wow-delay="0.1s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/leon-portada.jpg" alt="foto de leon">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/lemur-slide.jpg" alt="foto de lemure">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/tigre.jpg" alt="foto de tigre">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Bienvenido al Bioparque Quillón</p>
+                    <h1 class="display-5 mb-4">Presentación</h1>
+                    <p class="mb-4"><span class="text-primary"><strong>Bioparque Quillón</strong></span> es un proyecto en desarrollo que consiste en una Institución sin fines de lucro, laica, apolítica, y sin prejuicios, cuyo objeto de trabajo son los animales y su bienestar y conservación presente y futuro.</p>
+                    <p class="mb-4">Su gestación se debe a la iniciativa de su Director, <strong>Sr. Cristián Anguita Geissbühler</strong> y su <strong>Sra. Patricia Campos Lara</strong>, quienes apoyados por la Sociedad Agrícola y Forestal El Retiro Ltda. adquieren en el año 2010, el predio donde comienza la construcción del <span class="text-primary">Bioparque Quillón</span> que más tarde  le dará existencia física a la Fundación para la Protección de la Vida Silvestre...</p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="presentacion.html">Leer Más</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div>
+                        <img class="img-fluid" src="img/LOGO%20LETRAS%20CAFE.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animal Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <p><span class="text-primary me-2">#</span>Animales que habitan en Bioparque</p>
+                    <h1 class="display-5 mb-0">Mira los <span class="text-primary">animales</span> albergados en Bioparque</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="galeria.html">Ver más en la Galería</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/home/PHOTO-2024-02-15-01-09-16.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/home/PHOTO-2024-02-15-01-09-16.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/home/IMG_3534.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/home/IMG_3534.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/home/IMG_3513.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/home/IMG_3513.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/vaca-africana.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/vaca-africana.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/home/PHOTO-2024-02-15-01-26-49.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/home/PHOTO-2024-02-15-01-26-49.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div id="horarios-y-valores" class="col-12">
+                            <a class="animal-item" href="img/suricata.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/suricata.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animal End -->
+
+    <!-- Visiting Hours Start -->
+    <div class="container-xxl bg-primary visiting-hours my-5 py-4" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-5 wow fadeIn" data-wow-delay="0">
+                    <h1 class="display-6 text-light">Horarios</h1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span>Lunes</span>
+                            <span class="text-danger">CERRADO</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Martes</span>
+                            <span class="text-danger">CERRADO</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Miércoles</span>
+                            <span class="text-danger">CERRADO</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Jueves</span>
+                            <span class="text-danger">CERRADO</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Viernes</span>
+                            <span class="text-danger">CERRADO</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Sábado</span>
+                            <span>11:00 - 17:00</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Domingos y Festivos</span>
+                            <span>11:00 - 17:00</span>
+                        </li>
+                        <!-- li class="list-group-item">
+                            <span class="text-secondary">Winter schedule 2025: from March 1 to September 5.</span>
+                        </li -->
+                        <!-- li class="list-group-item">
+                            <span class="text-danger text-center">Desde el 23 al 31 de Diciembre</span>
+                            <span class="text-danger">CERRADO</span>
+                        </li -->
+                        <div class="text-center mt-lg-4 mt-3">
+                            <h4><span class="text-secondary text-center">* Última entrada hasta a las 17:00 *</span></h4>
+                        </div>
+                        <div class="text-center mt-1">
+                            <h4><span class="text-secondary text-danger">* Bioparque Cierra a las 18:00 *</span></h4>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-md-7 text-light wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 text-light mb-5">Valores</h1>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Entrada General (desde los 2 años):</td>
+                                <td><span class="text-secondary">$6.000</span></td>
+                            </tr>
+                            <tr>
+                                <td>Medios de pago:</td>
+                                <td>
+                                    <p class="mb-2">&bull; Transferencia Bancaria</p>
+                                    <p class="mb-2">&bull; Efectivo</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="contacto" colspan="2" class="text-danger text-center">&bull; No es posible pagar con Tarjetas de crédito/débito, la señal del lugar es inestable.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-danger text-center">&bull; No está permitido el ingreso de mascotas.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Visiting Hours End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Contáctanos</p>
+                    <h1 class="display-5 mb-4">¿Deseas agendar una visita? Contáctanos!</h1>
+                    <p class="mb-4">Si representas un colegio o institución, y deseas agendar una visita especial, no dudes en comunicarte con nosotros. O para cualquier consulta, llena nuestro formulario de contacto:</p>
+                    <form id="imObjectForm_3" action="javascript:void(0);" method="post" enctype="multipart/form-data">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="imObjectForm_3_1" name="imObjectForm_3_1" required>
+                                    <label for="imObjectForm_3_1">Tu nombre</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-light border-0" id="imObjectForm_3_2" name="imObjectForm_3_2" required>
+                                    <label for="imObjectForm_3_2">Tu email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="imObjectForm_3_3" name="imObjectForm_3_3" required>
+                                    <label for="imObjectForm_3_3">Asunto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-light border-0" id="imObjectForm_3_4" name="imObjectForm_3_4" style="height: 100px" required></textarea>
+                                    <label for="imObjectForm_3_4">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit" id="submitBtn">
+                                    Enviar
+                                </button>
+                                <div id="spinner-email" style="display: none;">Enviando...</div>
+                            </div>
+                        </div>
+                        <div id="resultMessage"></div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100" style="min-height: 400px;">
+                        <iframe class="rounded w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4130.7685785407575!2d-72.45872820943453!3d-36.7994934051874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96691a463fb8241b%3A0xcfb1c1cb1f88f235!2sBioparque%20Quill%C3%B3n!5e1!3m2!1ses!2scl!4v1725814678576!5m2!1ses!2scl"
+                                frameborder="0" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-24 col-md-24">
+                    <h5 class="text-secondary mb-4">Dirección</h5>
+                    <p class="mb-2"><a class="footer-link" target="_blank" href="https://maps.app.goo.gl/QcndsL5MtUxu75HB6"><i class="fa fa-map-marker-alt me-3"></i>Camino a Cerro Negro Km 7.2, Quillón.</a></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+569 9047 8860 | +569 8208 8789
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>delegacionesbioparque@gmail.com</p>
+                    <p class="mb-2"><a class="footer-link" target="_blank" href="https://www.facebook.com/bioparqueeducativoquillon.org"><i class="fab fa-facebook-f me-3"></i>/bioparqueeducativoquillon.org</a></p>
+                    <p class="mb-2"><a class="footer-link" target="_blank" href="https://www.instagram.com/bioparque_quillon"><i class="fab fa-instagram me-3"></i>/bioparque_quillon</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; Bioparque Quillón - 2025 - Chile, Todos los derechos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/lang-toggle.js"></script>
+    <script>
+      document.getElementById('imObjectForm_3').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const submitBtn = document.getElementById('submitBtn');
+        const spinner = document.getElementById('spinner-email');
+        const resultMessage = document.getElementById('resultMessage');
+        const ONE_MINUTE = 60000; // 60 segundos en milisegundos
+        const now = Date.now();
+
+        // Obtener el último envío desde el almacenamiento local
+        const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+
+        // Validar el tiempo transcurrido
+        if (lastSubmissionTime && (now - lastSubmissionTime < ONE_MINUTE)) {
+          const timeRemaining = Math.ceil((ONE_MINUTE - (now - lastSubmissionTime)) / 1000);
+          resultMessage.innerHTML = `<p class="text-danger">Debes esperar ${timeRemaining} segundos antes de enviar el próximo mensaje.</p>`;
+
+          // Deshabilitar el botón de enviar
+          submitBtn.disabled = true;
+
+          // Rehabilitar el botón después de que el tiempo restante haya pasado
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            resultMessage.innerHTML = ''; // Limpiar mensaje de error
+          }, timeRemaining * 1000);
+
+          return;
+        }
+
+        // Validación del formulario
+        const nombre = document.getElementById('imObjectForm_3_1').value.trim();
+        const email = document.getElementById('imObjectForm_3_2').value.trim();
+        const asunto = document.getElementById('imObjectForm_3_3').value.trim();
+        const mensaje = document.getElementById('imObjectForm_3_4').value.trim();
+
+        if (!nombre || !email || !asunto || !mensaje) {
+          resultMessage.innerHTML = '<p class="text-danger">Por favor, completa todos los campos.</p>';
+          return;
+        }
+
+        if (asunto.length < 7) {
+          resultMessage.innerHTML = '<p class="text-danger">El asunto es muy corto. Debe tener al menos 7 caracteres.</p>';
+          return;
+        }
+
+        if (mensaje.length < 10) {
+          resultMessage.innerHTML = '<p class="text-danger">Tu mensaje es muy corto. Debe tener al menos 10 caracteres.</p>';
+          return;
+        }
+
+        // Mostrar el spinner
+        submitBtn.style.display = 'none';
+        spinner.style.display = 'block';
+        resultMessage.innerHTML = '';
+
+        // Recoger datos del formulario
+        const formData = new FormData(this);
+
+        // Enviar datos del formulario mediante AJAX
+        fetch('imemail/index.php', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+          // Guardar la hora del envío en el almacenamiento local
+          localStorage.setItem('lastSubmissionTime', now);
+
+          // Ocultar el spinner y mostrar el botón de enviar nuevamente
+          spinner.style.display = 'none';
+          submitBtn.style.display = 'block';
+
+          // Mostrar mensaje de resultado
+          resultMessage.innerHTML = '<p class="text-success">Tu mensaje ha sido enviado.</p>';
+
+          // Limpiar el formulario
+          document.getElementById('imObjectForm_3').reset();
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          // Ocultar el spinner y mostrar el botón de enviar nuevamente
+          spinner.style.display = 'none';
+          submitBtn.style.display = 'block';
+
+          // Mostrar mensaje de error
+          resultMessage.innerHTML = '<p class="text-danger">Hubo un error al enviar tu mensaje. Inténtalo nuevamente.</p>';
+        });
+      });
+    </script>
+    <script src="js/select-lang.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var navbarCollapse = document.getElementById('navbarCollapse');
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(function(navLink) {
+          navLink.addEventListener('click', function(event) {
+            var isDropdownLink = this.classList.contains('dropdown-toggle') || this.parentElement.classList.contains('dropdown-menu');
+
+            if (!isDropdownLink) {
+              // Si el menú está desplegado, se colapsa
+              if (navbarCollapse.classList.contains('show')) {
+                var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                  toggle: true
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Agrega un event listener a los clicks de los enlaces con anclaje
+        document.querySelectorAll('a[href^="#horarios-y-valores"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            // Verifica si la resolución es al menos 1212px
+            if (window.innerWidth >= 1212) {
+              e.preventDefault();
+
+              // Obtén el destino del anclaje
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                // Realiza el scroll al anclaje y luego baja 300px adicionales
+                window.scrollTo({
+                  top: targetElement.offsetTop + 500, // Baja 300px
+                  behavior: 'smooth' // Desplazamiento suave
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Agrega un event listener a los clicks de los enlaces con anclaje
+        document.querySelectorAll('a[href^="#horarios-y-valores"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            // Verifica si la resolución es al menos 1212px
+            if (window.innerWidth <= 600) {
+              e.preventDefault();
+
+              // Obtén el destino del anclaje
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                // Realiza el scroll al anclaje y luego baja 300px adicionales
+                window.scrollTo({
+                  top: targetElement.offsetTop + 100, // Baja 300px
+                  behavior: 'smooth' // Desplazamiento suave
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Agrega un event listener a los clicks de los enlaces con anclaje
+        document.querySelectorAll('a[href^="#contacto"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            // Verifica si la resolución es al menos 1212px
+            if (window.innerWidth >= 1212) {
+              e.preventDefault();
+
+              // Obtén el destino del anclaje
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                // Realiza el scroll al anclaje y luego baja 300px adicionales
+                window.scrollTo({
+                  top: targetElement.offsetTop + 3300, // Baja 300px
+                  behavior: 'smooth' // Desplazamiento suave
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let alertShown = false;
+        // let alertClosed = false; // Comentado: variable para controlar si se cerró la alerta
+        const floatingAlert = document.getElementById('floatingAlertGiras');
+
+        // Función para cerrar la alerta
+        window.closeFloatingAlertGiras = function() {
+          floatingAlert.classList.remove('show');
+          // alertClosed = true; // Comentado: marcar como cerrada
+
+          // Comentado: Recordar que el usuario cerró la alerta por 30 minutos
+          // const expirationTime = new Date().getTime() + (0.5 * 60 * 60 * 1000); // 30 min
+          // localStorage.setItem('girasAlertClosed', expirationTime);
+
+          // Ocultar completamente después de la animación
+          setTimeout(() => {
+            floatingAlert.style.display = 'none';
+          }, 500);
+        };
+
+        // Comentado: Verificar si la alerta fue cerrada recientemente
+        // const alertClosedTime = localStorage.getItem('girasAlertClosed');
+        // if (alertClosedTime && new Date().getTime() < parseInt(alertClosedTime)) {
+        //   alertClosed = true;
+        //   floatingAlert.style.display = 'none';
+        // }
+
+        // Función para mostrar la alerta con scroll
+        function handleScroll() {
+          // if (alertShown || alertClosed) return; // Comentado: también verificar si fue cerrada
+          if (alertShown) return; // Solo verificar si ya se mostró
+
+          // Obtener el div "About Start"
+          const aboutSection = document.querySelector('.container-fluid.bg-light');
+
+          if (aboutSection) {
+            const aboutRect = aboutSection.getBoundingClientRect();
+            const aboutBottom = aboutRect.bottom;
+
+            // Si el usuario ha pasado completamente el div "About"
+            if (aboutBottom < 0) {
+              floatingAlert.style.display = 'block';
+              // Pequeño delay para que se vea la transición
+              setTimeout(() => {
+                floatingAlert.classList.add('show');
+              }, 100);
+
+              alertShown = true;
+
+              // Auto-cerrar después de 15 segundos
+              setTimeout(() => {
+                // if (!alertClosed) { // Comentado: verificar si no fue cerrada manualmente
+                closeFloatingAlertGiras();
+                // } // Comentado: fin de la verificación
+              }, 25000);
+            }
+          }
+        }
+
+        // Agregar event listener para scroll con throttle para mejor rendimiento
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+          if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+          }
+          scrollTimeout = setTimeout(handleScroll, 100);
+        });
+      });
+    </script>
+</body>
+</html>
