@@ -16,7 +16,7 @@
     <meta property="og:image:height" content="821">
     <meta property="og:url" content="https://www.bioparquequillon.org">
     <meta property="og:type" content="website">
-
+    <meta name="format-detection" content="telephone=no">
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon">
 
@@ -98,24 +98,46 @@
     <!-- Alerta Flotante Giras Pedagógicas -->
     <div id="floatingAlertGiras" class="floating-alert-giras">
         <div class="alert mb-0" role="alert">
-            <div class="d-flex justify-content-between align-items-start">
+            <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="flex-grow-1">
-                    <h6 class="alert-heading">
-                        <i class="fas fa-graduation-cap me-2"></i>
-                        Giras Pedagógicas Disponibles
-                    </h6>
-                    <p class="mb-2">
-                        <strong>Reserva tu visita:</strong> animales, naturaleza y aprendizaje
-                    </p>
-                    <div class="small">
-                        <strong>📅 Martes a Viernes</strong><br>
-                        <strong>📧</strong>
-                        <a href="mailto:delegacionesbioparque@gmail.com" class="email-link">
-                            delegacionesbioparque@gmail.com
-                        </a>
-                    </div>
+                    <h5 class="alert-heading mb-0">
+                        <i class="fas fa-calendar-check me-2"></i>
+                        Visítanos
+                    </h5>
                 </div>
                 <button type="button" class="btn-close ms-3" onclick="closeFloatingAlertGiras()"></button>
+            </div>
+
+            <!-- Horarios Públicos -->
+            <div class="info-section" style="background: rgba(52, 152, 219, 0.9);">
+                <h6>
+                    <i class="fas fa-users me-2"></i>
+                    <span style="color: rgb(241,212,97)">Horario Bioparque</span>
+                </h6>
+                <p>
+                    <strong>📅 Sábados, Domingos y Festivos</strong><br>
+                    <strong>🕐 11:00 AM - 5:00 PM</strong>
+                </p>
+            </div>
+
+            <!-- Giras Pedagógicas -->
+            <div class="info-section mt-3" style="background: rgba(52, 152, 219, 0.9);">
+                <h6>
+                    <i class="fas fa-school me-2"></i>
+                    <span style="color: rgb(171,241,97)">Giras Pedagógicas</span>
+                </h6>
+                <p class="mb-2">
+                    <span style="color: rgb(241,212,97)">Reserva tu visita</span>: Animales, naturaleza y aprendizaje
+                </p>
+                <p class="small mb-1">
+                    <strong>📅 Martes a Viernes</strong>
+                </p>
+                <p class="small mb-0">
+                    <strong>📧</strong>
+                    <a href="mailto:delegacionesbioparque@gmail.com" class="email-link" style="font-size: 0.8rem;">
+                        delegacionesbioparque@gmail.com
+                    </a>
+                </p>
             </div>
         </div>
     </div>
