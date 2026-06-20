@@ -38,7 +38,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style4.css" rel="stylesheet">
+    <link href="css/style5.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WMTXHRL0X"></script>
     <script>
@@ -155,6 +155,8 @@
     </div>
 </div>
 <!-- Topbar End -->
+
+<div id="floatingAlertOverlay" class="floating-alert-overlay"></div>
 <!-- Alerta Flotante Giras Pedagógicas -->
 <div id="floatingAlertGiras" class="floating-alert-giras">
     <div class="alert mb-0" role="alert">
@@ -767,30 +769,21 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     let alertShown = false;
-    // let alertClosed = false; // Comentado: variable para controlar si se cerró la alerta
     const floatingAlert = document.getElementById('floatingAlertGiras');
 
     // Función para cerrar la alerta
     window.closeFloatingAlertGiras = function() {
       floatingAlert.classList.remove('show');
-      // alertClosed = true; // Comentado: marcar como cerrada
-
-      // Comentado: Recordar que el usuario cerró la alerta por 30 minutos
-      // const expirationTime = new Date().getTime() + (0.5 * 60 * 60 * 1000); // 30 min
-      // localStorage.setItem('girasAlertClosed', expirationTime);
+      // Ocultar el overlay
+      const overlay = document.getElementById('floatingAlertOverlay');
+      overlay.classList.remove('show');
 
       // Ocultar completamente después de la animación
       setTimeout(() => {
         floatingAlert.style.display = 'none';
+        overlay.style.display = 'none'; // ← ocultar overlay también
       }, 500);
     };
-
-    // Comentado: Verificar si la alerta fue cerrada recientemente
-    // const alertClosedTime = localStorage.getItem('girasAlertClosed');
-    // if (alertClosedTime && new Date().getTime() < parseInt(alertClosedTime)) {
-    //   alertClosed = true;
-    //   floatingAlert.style.display = 'none';
-    // }
 
     // Función para mostrar la alerta con scroll
     function handleScroll() {
@@ -806,20 +799,18 @@
 
         // Si el usuario ha pasado completamente el div "About"
         if (aboutBottom < 0) {
+          // Mostrar overlay
+          const overlay = document.getElementById('floatingAlertOverlay');
+          overlay.style.display = 'block';
+
           floatingAlert.style.display = 'block';
           // Pequeño delay para que se vea la transición
           setTimeout(() => {
             floatingAlert.classList.add('show');
+            overlay.classList.add('show');
           }, 100);
 
           alertShown = true;
-
-          // Auto-cerrar después de 15 segundos
-          setTimeout(() => {
-            // if (!alertClosed) { // Comentado: verificar si no fue cerrada manualmente
-            closeFloatingAlertGiras();
-            // } // Comentado: fin de la verificación
-          }, 45000);
         }
       }
     }
